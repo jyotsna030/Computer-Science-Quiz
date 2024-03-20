@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+/* Quiz section */
+#quiz {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#quiz:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.quiz-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #892865;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#options {
+    margin-top: 20px;
+    text-align: left;
+}
+
+button.option {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 5px 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f1eaea;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.option:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 4%, 10%);
+    margin: 20px;
+}
+
+.attribution a {
+    color: hsl(90, 3%, 11%);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for phone screens */
+    #quiz {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+    
+    .quiz-heading {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+    
+    button.option {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}

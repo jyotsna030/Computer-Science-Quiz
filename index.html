@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <u><h1 class="quiz-heading">Computer Science Quiz</h1></u>
+    <div id="progress-bar"></div>
+
+    <div id="quiz">
+        <h2 id="question">Press Enter to start the exam</h2>
+        <input type="text" id="usernameInput" placeholder="Enter your name">
+        <button id="startBtn">Start Quiz</button>
+        <div id="options">
+            <!-- Options will be displayed here -->
+        </div>
+        <p id="timer">Time Remaining: 10:00</p>
+        <p id="result"></p>
+        <button id="nextBtn" style="display: none;">Next</button>
+    </div>
+
+    <!-- Leaderboard section -->
+    <div id="leaderboard" style="display: none;">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard-list"></ol>
+    </div>
+
+    <div class="attribution">
+        Coded by <a href="#">Jyotsna Shrivastava</a>.
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>
